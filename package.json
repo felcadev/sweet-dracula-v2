@@ -1,0 +1,65 @@
+{
+    "name": "sweetdraculav2",
+    "displayName": "Sweet Dracula V2",
+    "description": "Sweet Dracula V2 — A beautiful, darker - Dracula fork",
+    "publisher": "felcadev",
+    "theme": "syntax",
+    "version": "1.0.9",
+    "license": "MIT",
+    "scripts": {
+        "build:themes": "node scripts/build-themes.mjs",
+        "validate": "npm run build:themes && node scripts/validate-themes.mjs",
+        "package": "npm run validate && vsce package",
+        "publish": "npm run validate && vsce publish"
+    },
+    "maintainers": [
+        "felcadev <pichaosdev@gmail.com>"
+    ],
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/felcadev/sweet-dracula.git"
+    },
+    "bugs": {
+        "url": "https://github.com/felcadev/sweet-dracula/issues"
+    },
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "keywords": [
+        "dracula",
+        "dark",
+        "theme",
+        "color-theme"
+    ],
+    "categories": [
+        "Themes"
+    ],
+    "icon": "sweetdracula.png",
+    "galleryBanner": {
+        "color": "#0c0e14",
+        "theme": "dark"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Sweet Dracula V2",
+                "uiTheme": "vs-dark",
+                "path": "themes/sweet-dracula-color-theme.json"
+            },
+            {
+                "label": "Sweet Dracula V2 Blue",
+                "uiTheme": "vs-dark",
+                "path": "themes/sweet-dracula-blue-color-theme.json"
+            },
+            {
+                "label": "Sweet Dracula V2 Soft",
+                "uiTheme": "vs-dark",
+                "path": "themes/sweet-dracula-soft-color-theme.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@vscode/vsce": "^3.9.2"
+    }
+}
