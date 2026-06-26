@@ -4,13 +4,13 @@
     "description": "Sweet Dracula V2 — A beautiful, darker - Dracula fork",
     "publisher": "felcadev",
     "theme": "syntax",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "license": "MIT",
     "scripts": {
         "build:themes": "node scripts/build-themes.mjs",
         "validate": "npm run build:themes && node scripts/validate-themes.mjs",
-        "package": "npm run validate && vsce package",
-        "publish": "npm run validate && vsce publish"
+        "package": "npm run validate && vsce package --no-dependencies",
+        "publish": "npm run validate && vsce publish --no-dependencies"
     },
     "maintainers": [
         "felcadev <pichaosdev@gmail.com>"
@@ -18,10 +18,10 @@
     "contributors": [],
     "repository": {
         "type": "git",
-        "url": "https://github.com/felcadev/sweet-dracula.git"
+        "url": "https://github.com/felcadev/sweet-dracula-v2.git"
     },
     "bugs": {
-        "url": "https://github.com/felcadev/sweet-dracula/issues"
+        "url": "https://github.com/felcadev/sweet-dracula-v2/issues"
     },
     "engines": {
         "vscode": "^1.10.0"

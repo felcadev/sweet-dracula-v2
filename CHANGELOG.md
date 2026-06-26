@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+- Update extension metadata to point to the Sweet Dracula V2 repository.
+
 ## 1.0.9
 
 - Add: Editor Inlay Hint
